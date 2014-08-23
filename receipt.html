@@ -11,13 +11,25 @@ body {
 
 <style>
 .receipt {
-  border: 1px solid black;
+  border: 1px solid #888;
   width: 32em;
   background: #f4f4f4 url(receipt_paper.jpg) repeat top center;
-  padding: 2em 1em;
+  padding: 3em 2em;
   font-family: Monaco, monospace;
   font-size: 12px;
   text-transform: uppercase;
+  color: #558;
+
+  -webkit-box-shadow: -4px 3px 0 0 rgba(0,0,0,0.25);
+  -moz-box-shadow: -4px 3px 0 0 rgba(0,0,0,0.25);
+  box-shadow: -4px 3px 0 0 rgba(0,0,0,0.25);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+
+
 }
 .receipt > .timestamp-line > .order-id {
   display: inline-block;
