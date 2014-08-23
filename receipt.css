@@ -19,6 +19,10 @@
 
 
 }
+.receipt a {
+  text-decoration: none;
+}
+
 .receipt > .timestamp-line > .order-id {
   display: inline-block;
 }
@@ -45,17 +49,30 @@
   content: "********************************************************";
 }
 
+.receipt > .timestamp-line::after {
+  vertical-align: -1.3em;
+}
+
 .receipt > .timestamp-line > .order-id {
   float: right;
 }
-
-/*.receipt > .section > .title::before,
-.receipt > .section > .title::after {
-  content: "=================================================";
-}*/
 
 .receipt > .section > .title {
   text-align: center;
   overflow-x: hidden;
   white-space: nowrap;
+}
+
+.receipt > .section > .content {
+  /*display: inline;*/
+  margin-bottom: 1em;
+}
+
+.receipt > .section > .content > .item {
+  display: inline-block;
+  width: 25em;
+}
+
+.receipt > .section > .content > .price {
+  float: right;
 }
