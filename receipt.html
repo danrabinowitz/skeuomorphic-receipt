@@ -1,79 +1,14 @@
 <html>
   <head>
-<style>
-body {
-  background-color: #e9e5e2;
-}
-.receipt {
-  margin: 0 auto;
-}
-</style>
-
-<style>
-.receipt {
-  border: 1px solid #888;
-  width: 32em;
-  background: #f4f4f4 url(receipt_paper.jpg) repeat top center;
-  padding: 3em 2em;
-  font-family: Monaco, monospace;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #558;
-
-  -webkit-box-shadow: -4px 3px 0 0 rgba(0,0,0,0.25);
-  -moz-box-shadow: -4px 3px 0 0 rgba(0,0,0,0.25);
-  box-shadow: -4px 3px 0 0 rgba(0,0,0,0.25);
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-
-
-}
-.receipt > .timestamp-line > .order-id {
-  display: inline-block;
-}
-.receipt > .vendor {
-  text-align: center;
-  margin-bottom: 1em;
-}
-
-.receipt > .vendor > .address {
-  margin: 1em 0;
-}
-
-.receipt > .header.line {
-  text-align: center;
-  margin: 1em 0;
-}
-
-.receipt > .timestamp-line {
-  overflow-x: hidden;
-}
-
-.receipt > .timestamp-line::before,
-.receipt > .timestamp-line::after {
-  content: "********************************************************";
-}
-
-.receipt > .timestamp-line > .order-id {
-  float: right;
-}
-
-/*.receipt > .section > .title::before,
-.receipt > .section > .title::after {
-  content: "=================================================";
-}*/
-
-.receipt > .section > .title {
-  text-align: center;
-  overflow-x: hidden;
-  white-space: nowrap;
-}
-
-
-</style>
+    <link href="receipt.css" media="all" rel="stylesheet" type="text/css">
+    <style>
+      body {
+        background-color: #e9e5e2;
+      }
+      .receipt {
+        margin: 0 auto;
+      }
+    </style>
   </head>
   <body>
     <div class="receipt">
